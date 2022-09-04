@@ -1,0 +1,43 @@
+<!DOCTY "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xht />
+<title>ZDAK_GIRIS_14</title>
+</head>
+<body>
+<table class="outerTable">
+  <tr class="normalBoldLarge">
+     <td><h2>Code listing for: ZDAK_GIRIS_14</h2>
+<h3> Description: </h3></td>
+   </tr>
+  <tr>
+     <td>
+     <table class="innerTable">
+       <tr>
+          <td>
+   <div class="codeComment">
+*&---------------------------------------------------------------------*<br />
+*&&nbsp;Report&nbsp;ZDAK_GIRIS_14<br />
+*&---------------------------------------------------------------------*<br />
+*&<br />
+*&---------------------------------------------------------------------*<br />
+   </div>
+   <div class="code">
+REPORT ZDAK_GIRIS_14.<br />
+<br />
+<br />
+CONSTANTS gc_kdv_orani type p decimals 2 value '1.18'.<br />
+<br />
+DATA gv_toplam type p DECIMALS 2.<br />
+PARAMETERS : pa_adet type i DEFAULT 10,  "çalýþtýðýna girilecek deðer kýsmý<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pa_fiyat&nbsp;type&nbsp;p&nbsp;DECIMALS&nbsp;2.<br />
+<br />
+gv_toplam = pa_adet * pa_fiyat * gc_kdv_orani.<br />
+<br />
+write: 'KDV Dahil :', gv_toplam, 'TL' .<br />
+            </div>
+          </td>
+        </tr>
+      </table>
+      </td>
+      </tr>
